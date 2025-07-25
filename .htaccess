@@ -23,3 +23,7 @@ RewriteRule ^index\.html$ / [R=301,L]
 # Redireciona produtos.html para /p
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/produtos\.html[\s?] [NC]
 RewriteRule ^index\.html$ / [R=301,L]
+
+# Redireciona membros.html para /me
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/membros\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
